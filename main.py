@@ -7,7 +7,7 @@ import matplotlib.image as img
 from colorthief import ColorThief
 
 from scipy.spatial import KDTree
-import clothescolors
+import colorsclothes
 
 from webcolors import (
     CSS3_HEX_TO_NAMES,
@@ -64,10 +64,10 @@ color = names[index]
 
 
 #find matching colors
-for key in clothescolors.colors.keys():
+for key in colorsclothes.colors.keys():
     if key in color:
         print("Matching colors:")
-        for color in clothescolors.colors[key]:
+        for color in colorsclothes.colors[key]:
             print(color)
 
         break
